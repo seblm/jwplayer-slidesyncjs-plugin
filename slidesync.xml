@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slideshow>
+ <slides>
+  <slide>
+   <url>slides.001.jpg</url>
+   <time format="hhmmss">00:00</time>
+  </slide>
+  <slide>
+   <url>slides.002.jpg</url>
+   <time format="hhmmss">00:05</time>
+  </slide>   
+  <slide>
+   <url>slides.003.jpg</url>
+   <time format="hhmmss">00:10</time>
+  </slide>
+  <slide>
+   <url>slides.004.jpg</url>
+   <time format="hhmmss">00:15</time>
+  </slide>
+  <slide>
+   <url>slides.005.jpg</url>
+   <time format="hhmmss">00:20</time>
+  </slide>
+  <slide>
+   <url>slides.006.jpg</url>
+   <time format="hhmmss">00:25</time>
+  </slide>
+ </slides>
+</slideshow>

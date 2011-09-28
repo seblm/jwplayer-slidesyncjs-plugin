@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JW Player slidesync and slidescroller js plugins</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="mediaplayer-5.7/jwplayer.js"></script>
+
+<h1>JW Player slidesync and slidescroller js plugins</h1>
+
+<h2>Old JW Player slidesync and slidescroller flash plugins</h2>
+
+<div id="old-mediaplayer">JW Player goes here</div>
+
+<script type="text/javascript">
+jwplayer("old-mediaplayer").setup({
+  flashplayer: "mediaplayer-5.7/player.swf",
+  file: "jwplayer-with-slides.mov",
+  width: 720,
+  height: 386,
+  plugins: {
+    'slidesync-1': {
+      'position': 'right',
+      'size': 300,
+      'xmlPath': 'slidesync.xml',
+    },
+    'slidescroller-1': {
+      'position': 'bottom',
+      'size': 150,
+      'xmlPath': 'slidesync.xml',
+    }
+  }
+});
+</script>
+
+<h2>New JW Player slidesync and slidescroller js plugins</h2>
+
+<div id="new-mediaplayer">JW Player goes here</div>
+<div id="slidesync">Slidesync goes here</div>
+<div id="slidescroller">Slidescroller goes here</div>
+
+<script type="text/javascript">
+jwplayer('new-mediaplayer').setup({
+  flashplayer: 'mediaplayer-5.7/player.swf',
+  file: 'jwplayer-with-slides.mov',
+  width: 420,
+  height: 236,
+  plugins: {
+    'slidesyncjs.js': {
+      'containerId': 'slidesync',
+      'xmlPath': 'slidesync.xml',
+    },
+//     'jsslidescroller.js': {
+//       containerId: 'slidescroller',
+//       xmlPath: 'slidesync.xml',
+//     },
+  }
+});
+</script>
+
+</body>
+</html>
